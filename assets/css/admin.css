@@ -1,0 +1,87 @@
+.custom-field-row.align-right p {
+	text-align: right;
+}
+
+#leco_cp_template, #leco_cp_template_preview, select[id$="content_page"], .preview-content-page.button {
+	margin-right: 5px;
+}
+
+.just-created-content-page {
+	font-style: italic;
+	font-weight: bold;
+}
+
+.cmb2-options-page.leco_cp_options * {
+	box-sizing: border-box;
+}
+
+#leco_cp_option_metabox .button-primary {
+	margin-top: 2em;
+}
+
+.leco_client_page_leco_cp_options.post-type-leco_client .color, .leco_client_page_leco_cp_options .cmb2-id-tertiary-text-color {
+	width: 50%;
+	float: left;
+	height: 60px;
+}
+
+.leco_client_page_leco_cp_options .cmb2-id-tertiary-text-color:after, #cmb2-metabox-leco_cp_custom_branding:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.cmb2-options-page.leco_cp_options .cmb2-id-phone {
+	clear: both;
+}
+
+.leco_client_page_leco_cp_options .color.leco-cp-background .cmb-th {
+	width: 260px;
+}
+
+.post-type-leco_client .color {
+	width: 48%;
+	height: 50px;
+	float: left;
+}
+
+.cmb-row.cmb-type-textarea-code:before {
+	content: '';
+	display: block;
+	clear: both;
+	padding-bottom: 1em;
+}
+
+.module-type-group {
+	border-bottom: 1px solid #e9e9e9;
+}
+
+.module-type-group:after {
+	clear: both;
+	content: '';
+	display: table;
+}
+
+.module-type-select, .module-type {
+	width: 50%;
+	float: left;
+	border-bottom: 0 !important;
+}
+
+.iris-picker {
+	z-index: 999; /* Fix color picker overlap */
+}
+.iris-picker, .iris-picker * {
+	box-sizing: content-box !important;
+}
+
+.widefat .column-ID {
+    width: 6em;
+}
+.widefat .column-leco_cp_client, .widefat .column-projects {
+    width: 18em;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+	padding: 4px 5px;
+}

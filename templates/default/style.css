@@ -1,0 +1,1401 @@
+/**
+IE 10-11 fixes
+#drop-start
+ */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    body {
+        display: block !important;
+    }
+    #loginform, .content-section, .post-type-archive-leco_client .projects {
+        flex: none;
+    }
+    .iconset {
+        height: 42px;
+    }
+}
+/**
+#drop-end
+Icons
+ */
+.iconset {
+    display: inline-block;
+    text-decoration: inherit;
+    margin: .2em;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 36px;
+    height: auto;
+}
+.iconset svg * {
+    stroke: #8594a3;
+}
+.iconset.hidden {
+    display: none !important;
+}
+
+body {
+    color: #3c5063;
+    background: #fff;
+    font: 15px / 1.625 'Open Sans', sans-serif;;
+    min-width: 320px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    /* Sticky footer */
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: #3c5063;
+    border-bottom: 1px solid #ff5f5f;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #ff5f5f;
+    border-bottom: 1px solid transparent;
+}
+
+img {
+    max-width: 100%;
+}
+
+/**
+Form element sizes
+ */
+.container .btn, .container button, .container input[type="button"], .container input[type="reset"], .container input[type="submit"], .module_mark_as_complete .btn {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    min-width: 238px;
+    margin: 0;
+    padding: 16px 20px 17px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+/**
+drop start
+ */
+.container .mejs-container button {
+    min-width: auto;
+    border-radius: 0;
+}
+.container .btn i, .container button i, .container input[type="button"] i, .container input[type="reset"] i, .container input[type="submit"] i {
+    font-size: 12px;
+    margin-left: 5px;
+}
+/**
+drop end
+ */
+.container input[type="text"],
+.container input[type="tel"],
+.container input[type="email"],
+.container input[type="search"],
+.container input[type="password"],
+.container input[type="url"],
+.container textarea {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    padding: 15px 18px;
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/**
+Form element colors
+ */
+.btn, button, input[type="button"], input[type="reset"], input[type="submit"] {
+    background: #ff5f5f;
+    color: #fff;
+}
+
+.btn:hover, button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
+    background: #de4e4e;
+    color: #fff;
+    text-decoration: none;
+}
+.btn .iconset {
+    width: 12px;
+    vertical-align: middle;
+    margin: 0;
+}
+.btn .iconset .st0 {
+    stroke: #fff;
+    vertical-align: top;
+    stroke-width: 8px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="search"],
+input[type="password"],
+input[type="url"],
+textarea {
+    border: 1px solid #e7edf0;
+    background: #f6f8f9;
+    color: #8594a3;
+    box-shadow: none;
+    outline: none;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+input[type="search"]:focus,
+input[type="password"]:focus,
+input[type="url"]:focus,
+textarea:focus {
+    border-color: #52cdf5;
+}
+
+input[type="text"]::-webkit-input-placeholder,
+input[type="tel"]::-webkit-input-placeholder,
+input[type="email"]::-webkit-input-placeholder,
+input[type="search"]::-webkit-input-placeholder,
+input[type="password"]::-webkit-input-placeholder,
+input[type="url"]::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #8594a3;
+}
+
+input[type="text"]::-moz-placeholder,
+input[type="tel"]::-moz-placeholder,
+input[type="email"]::-moz-placeholder,
+input[type="search"]::-moz-placeholder,
+input[type="password"]::-moz-placeholder,
+input[type="url"]::-moz-placeholder,
+textarea::-moz-placeholder {
+    opacity: 1;
+    color: #8594a3;
+}
+
+input[type="text"]:-moz-placeholder,
+input[type="tel"]:-moz-placeholder,
+input[type="email"]:-moz-placeholder,
+input[type="search"]:-moz-placeholder,
+input[type="password"]:-moz-placeholder,
+input[type="url"]:-moz-placeholder,
+textarea:-moz-placeholder {
+    color: #8594a3;
+}
+
+input[type="text"]:-ms-input-placeholder,
+input[type="tel"]:-ms-input-placeholder,
+input[type="email"]:-ms-input-placeholder,
+input[type="search"]:-ms-input-placeholder,
+input[type="password"]:-ms-input-placeholder,
+input[type="url"]:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: #8594a3;
+}
+
+.logo {
+    padding:20px;
+}
+
+.logo.fixed-width {
+    width: 270px;
+    max-width: 270px;
+    height: auto;
+}
+
+.title-section {
+    position: relative;
+    background-color: #52cdf5;
+    padding: 15px 0;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #fff;
+    white-space: nowrap;
+}
+
+/**
+Drop start
+ */
+.title-section > * {
+    white-space: normal;
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 99%;
+}
+
+.container {
+    max-width: 1000px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.title-section .title {
+    display: block;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 0 14px;
+}
+
+.title-section p {
+    margin: 0;
+}
+
+.container:after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.title-section.add2:after {
+    height: 240px;
+}
+
+.title-section:after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    min-height: 150px;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+/**
+drop end
+ */
+
+.content-section {
+    padding: 52px 0 28px;
+}
+
+.content-section .container {
+    max-width: 694px;
+}
+
+.content-section p {
+    margin: 0 0 38px;
+}
+
+/* STATUS STYLES */
+
+.entry .project-status.vertical-padding {
+    width: 200%;
+    margin-left: -50%;
+}
+
+.project-status.vertical-padding {
+    padding-top: 0;
+    padding-bottom: 75px;
+}
+
+.project-status .inner-width {
+    display: flex;
+    -webkit-display: flex;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/**
+drop start
+ */
+.project-status.completed-yes .column.current,
+.project-status.completed-yes .column.next {
+    display: none;
+}
+
+.project-status.completed-yes .column.completion-date {
+    max-width: 660px;
+    width: 100%;
+}
+/**
+drop end
+ */
+
+.project-status .column {
+    width: 30%;
+    text-align: center;
+    background: #FFF;
+    border: 1px solid #e7eaec;
+    border-radius: 5px;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.1);
+}
+
+.project-status .column .value {
+    font-weight: 700;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 22px;
+    letter-spacing: -0.03em;
+    /*color: #262626;*/
+}
+
+.project-status .column .label {
+    font-size: 14px;
+    background: #52cdf5;
+    border-radius: 0 0 5px 5px;
+    padding: 15px;
+    color: #FFF;
+    font-weight: 700;
+    display: block;
+}
+
+.project-status .column.current .label {
+    background: #ff5f5f;
+}
+
+.project-status .column.completion-date .label {
+    background: #3c5063;
+}
+
+.projects {
+    overflow: hidden;
+    padding: 55px 0 47px;
+    background: #f6f8f9;
+}
+
+.phase-title {
+    font-size: 30px;
+    line-height: 34px;
+    font-weight: 300;
+    text-align: center;
+    margin: 0 0 56px;
+}
+.phase-title span {
+    display: block;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #8594a3;
+    margin: 0 0 15px;
+}
+.phase-title span i {
+    font-style: normal;
+}
+
+.projects .row {
+    margin-bottom: 31px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.row .col {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    vertical-align: top;
+    margin-right: -4px;
+    padding: 0 10px;
+}
+/**
+drop start
+ */
+.row {
+    margin: 0 -10px;
+}
+
+.row .col.col-3 {
+    width: 33.33%;
+    flex-direction: row;
+}
+.row .col.col-25 {
+    width: 25%;
+}
+.row .col.col-50 {
+    width: 50%;
+}
+/**
+drop end
+ */
+.row .col.leco-cp-sidebar {
+    width: 23.2%;
+    padding: 40px 40px 40px 0;
+    text-align: left;
+}
+.row .col.leco-cp-content {
+    width: 76.8%;
+    background: #fff;
+    text-align: left;
+    padding: 33px 46px;
+    line-height: 1.8em;
+}
+h1.leco-cp-module-title {
+    margin-top: 0;
+}
+.leco-cp-content input[type="text"], .leco-cp-content input[type="tel"], .leco-cp-content input[type="email"], .leco-cp-content input[type="search"], .leco-cp-content input[type="password"], .leco-cp-content input[type="url"], .leco-cp-content textarea {
+    width: 100%;
+}
+.leco-cp-content button, .leco-cp-content input[type="button"], .leco-cp-content input[type="reset"], .leco-cp-content input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+}
+.archive .row .col {
+    vertical-align: middle;
+}
+.archive .project-item {
+    min-height: 0;
+    color: #3c5063;
+    font-size: 16px;
+}
+.archive .project-item:hover {
+    color: #3c5063;
+}
+.archive .project-name {
+    text-align: left;
+}
+.archive .project-link .btn {
+    min-width: 0;
+    width: 100%;
+}
+
+.project-item {
+    display: block;
+    padding: 18px 30px;
+    min-height: 188px;
+    margin: 0 0 20px;
+    border: none;
+    background: #fff;
+    border: 1px solid #e7eaec;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #8594a3;
+    position: relative;
+    width: 100%;
+}
+
+.project-item .ico-area {
+    display: block;
+    font-size: 42px;
+    line-height: 1em;
+    margin: 0 0 10px;
+}
+
+.project-item .title {
+    display: block;
+    font-size: 18px;
+    line-height: 22px;
+    color: #3c5063;
+    margin: 0 0 14px;
+}
+
+
+a.project-item:hover {
+    color: #8594a3;
+    box-shadow: 0 0 5px #52cdf5;
+}
+
+.project-item.completed:focus, .project-item.mark-as-complete:focus {
+    outline: none;
+}
+.project-item.completed .checkmark, .project-item.mark-as-complete .checkmark {
+    background-image: url(assets/checkmark.svg);
+    background-repeat: no-repeat;
+    background-color: #ff5f5f;
+    background-position: center;
+    background-size: 13px;
+    border-radius: 25px;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    z-index: 10;
+}
+.project-item.mark-as-complete .checkmark .tooltip {
+    width: auto;
+    white-space: nowrap;
+    right: calc(-50% - 33px);
+}
+
+.project-item.inactive {
+    opacity: 0.5;
+    pointer-events: none;
+}
+.project-item.unclickable {
+    pointer-events: none;
+}
+.project-item.unclickable .checkmark {
+    pointer-events: auto;
+}
+
+.project-item .checkmark .tooltip {
+    background: #262626;
+    padding: 7px 10px;
+    border-radius: 3px;
+    position: absolute;
+    z-index: 3;
+    color: #FFF;
+    font-size: 12px;
+    right: calc(-50% - 12px);
+    top: -48px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(8px);
+    transition: visibility 0s, transform 0.3s, opacity 0.3s;
+}
+
+.project-item .checkmark:hover .tooltip {
+    transform: translateY(0px);
+    visibility: visible;
+    opacity: 1;
+}
+
+.project-item.completed .checkmark .tooltip .arrow, .project-item.mark-as-complete .checkmark .tooltip .arrow {
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid #262626;
+    position: absolute;
+    right: calc(50% - 10px);
+    top: 32px;
+}
+.project-item.mark-as-complete .checkmark {
+    background-color: #cad7dd;
+}
+.project-item.mark-as-complete .checkmark:hover {
+    background-color: #8794a1;
+}
+
+.cta-block {
+    padding: 91px 0 81px;
+    background: #52cdf5;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 34px;
+    text-align: center;
+    color: #fff;
+}
+
+.cta-block p {
+    margin: 0 0 32px;
+}
+
+.leco-cp-login form {
+    overflow: hidden;
+    width: 320px;
+    margin: auto;
+}
+
+#loginform .form-row.error input[type="text"],
+#loginform .form-row.error input[type="tel"],
+#loginform .form-row.error input[type="email"],
+#loginform .form-row.error input[type="search"],
+#loginform .form-row.error input[type="password"],
+#loginform .form-row.error input[type="url"],
+#loginform .form-row.error textarea {
+    border-color: #ff5f5f;
+}
+
+#loginform .form-row.error .error-msg {
+    display: block;
+}
+
+#loginform .form-row.error .icon-lighting {
+    display: block;
+}
+
+#loginform .form-control {
+    position: relative;
+}
+
+.leco-cp-login input[type="text"],
+.leco-cp-login input[type="tel"],
+.leco-cp-login input[type="email"],
+.leco-cp-login input[type="search"],
+.leco-cp-login input[type="password"],
+.leco-cp-login input[type="url"],
+.leco-cp-login textarea {
+    display: block;
+    width: 100%;
+    padding-right: 50px;
+    margin-bottom: 40px;
+}
+
+#loginform textarea {
+    height: 258px !important;
+    overflow: auto;
+    resize: none;
+}
+
+#loginform label {
+    display: block;
+    margin: 0 0 9px;
+}
+
+#loginform .btn {
+    display: block;
+    margin: 47px auto 0;
+}
+
+#loginform .error-msg {
+    display: none;
+    margin: -37px 0 10px;
+    font-weight: normal;
+    color: #ff5f5f;
+}
+
+p.lost-password {
+    float: left;
+}
+p.login-remember {
+    float: right;
+}
+
+.leco-cp-login .message,
+.leco-cp-login .success,
+.leco-cp-login .login-error,
+.leco-cp-login .leco-cp-errors {
+    width: 320px;
+    border-left: 4px solid #00a0d2;
+    font-size: 13px;
+    color: #444;
+    padding: 12px;
+    margin: 0 auto 20px;
+    background-color: #fff;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1);
+}
+.leco-cp-login .success {
+    border-left-color: #46b450;
+}
+.leco-cp-login .login-error, .leco-cp-login .leco-cp-alert-error {
+    border-left-color: #dc3232;
+}
+.leco-cp-login .leco-cp-errors p {
+    margin-bottom: 0;
+}
+
+/** Password Reset form **/
+#resetpassform input[type="text"], #resetpassform input[type="password"] {
+    font-size: 1.5em;
+    padding-right: 30px;
+}
+.user-pass1-wrap p, .leco-cp-login .description {
+    margin-bottom: 0;
+}
+.leco-cp-login .description {
+    width: 320px;
+    font-size: 13px;
+}
+
+.leco-cp-login .password-input-wrapper {
+    display: table;
+}
+.leco-cp-login .input.password-input {
+    display: table-cell;
+    margin: 0;
+}
+.leco-cp-login .pw-weak {
+    margin-bottom: 15px;
+}
+.leco-cp-login .button.button-secondary {
+    display: table-cell;
+    border-radius: 0;
+    vertical-align: middle;
+    color: #555;
+    border: 1px solid #cccccc;
+    background: #f7f7f7;
+    box-shadow: 0 1px 0 #cccccc;
+    padding: 0 10px;
+}
+#pass-strength-result {
+    background-color: #eee;
+    border: 1px solid #ddd;
+    color: #23282d;
+    margin: 0;
+    padding: 3px 5px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    opacity: 0;
+}
+#pass-strength-result.short {
+    background-color: #f1adad;
+    border-color: #e35b5b;
+    opacity: 1;
+}
+#pass-strength-result.bad {
+    background-color: #fbc5a9;
+    border-color: #f78b53;
+    opacity: 1;
+}
+#pass-strength-result.good {
+    background-color: #ffe399;
+    border-color: #ffc733;
+    opacity: 1;
+}
+#pass-strength-result.strong {
+    background-color: #c1e1b9;
+    border-color: #83c373;
+    opacity: 1;
+}
+#pass1.short, #pass1-text.short {
+    border-color: #e35b5b;
+}
+#pass1.bad, #pass1-text.bad {
+    border-color: #f78b53;
+}
+#pass1.good, #pass1-text.good {
+    border-color: #ffc733;
+}
+#pass1.strong, #pass1-text.strong {
+    border-color: #83c373;
+}
+.pw-weak {
+    display: none;
+}
+.indicator-hint {
+    padding-top: 8px;
+}
+#pass1-text,
+.show-password #pass1 {
+    display: none;
+}
+.show-password #pass1-text
+{
+    display: inline-block;
+}
+
+.leco-cp-logout {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.leco-cp-logout-link {
+    display: block;
+    background-color: rgba( 255, 255, 255, 0.6 );
+    font-size: 16px;
+    border-bottom: none;
+    padding: .6em 1em;
+    line-height: 1em;
+}
+
+.login-submit {
+    text-align: center;
+}
+
+/* Fix the Jetpack "prove your humanity" input style. */
+#jetpack_protect_answer {
+    padding: 0 !important;
+    display: inline !important;
+    margin-bottom: 15px !important;
+}
+/**
+reCaptcha
+ */
+#loginform div.g-recaptcha {
+    margin: 12px auto 24px !important;
+}
+.anr_captcha_field {
+    margin-bottom: 38px;
+}
+#anr_captcha_field_1 > div, .g-recaptcha > div, .gglcptch_recaptcha > div {
+    margin: 0 auto;
+}
+
+#footer {
+    padding: 17px 28px 18px;
+    background: #3c5063;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 600;
+    text-align: center;
+    color: #b1b9c1;
+}
+
+#footer address {
+    float: left;
+    margin: 0;
+    font-style: normal;
+}
+
+.social {
+    float: right;
+}
+
+.social-networks {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 17px;
+}
+
+.social .title {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 7px 0 0;
+}
+
+.social-networks li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 9px 0 12px;
+}
+
+.contacts {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.contacts li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.contacts li + li:before {
+    content: "\00b7";
+    margin: 0 9px;
+}
+
+#footer a {
+    color: #b1b9c1;
+    border: none;
+}
+
+#footer a:hover {
+    color: #fff;
+}
+
+.contacts {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#footer address i {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 5px 0 2px;
+    font-size: 15px;
+}
+
+/**
+* Apply default WordPress image classes
+* ref: https://codex.wordpress.org/CSS
+**/
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    white-space: nowrap;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+.screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000; /* Above WP toolbar. */
+}
+
+.leco-cp-responsive-video {
+    position: relative;
+    padding-bottom: 50.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 2em;
+}
+.leco-cp-responsive-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .entry .project-status.vertical-padding {
+        width: 120%;
+        margin-left: -9%;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        font-size: 14px;
+        line-height: 1.43;
+    }
+
+    h1,
+    .h1 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    h2,
+    .h2 {
+        font-size: 18px;
+    }
+
+    h3,
+    .h3 {
+        font-size: 18px;
+    }
+
+    .cta-block {
+        padding: 74px 0 73px;
+        line-height: 40px;
+    }
+
+    .cta-block.add {
+        padding-top: 74px;
+    }
+
+    .cta-block.add2 {
+        padding: 74px 0 92px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .title-section {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .title-section.add2:after {
+        height: 240px;
+    }
+
+    .title-section .title {
+        font-size: 10px;
+        margin: 0 0 10px;
+    }
+
+    .title-section p {
+        margin: 0 -10px;
+    }
+
+    .row {
+        margin: 0 -5px;
+    }
+
+    .row .col {
+        padding: 0 5px;
+    }
+
+    .content-section {
+        padding: 29px 0 2px;
+    }
+
+    .content-section h2 {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .projects {
+        padding: 35px 0 0;
+    }
+
+    .phase-title {
+        font-size: 24px;
+        line-height: 30px;
+        margin: 0 0 42px;
+    }
+    .phase-title span {
+        font-size: 10px;
+    }
+
+    .projects .row {
+        margin-bottom: 44px;
+    }
+
+    .projects .row .col {
+        width: 50%;
+    }
+
+    .archive .projects .row .col {
+        width: 100%;
+    }
+    .archive .project-name {
+        text-align: center;
+    }
+    .archive .project-link .btn {
+        width: 60%;
+    }
+    .archive .project-name, .archive .project-status {
+        margin-bottom: 2em;
+    }
+
+    .project-item {
+        padding: 18px 15px;
+        margin: 0 0 24px;
+        height: auto !important;
+    }
+
+    #footer {
+        padding: 20px 10px 20px;
+    }
+
+    #footer address {
+        display: none;
+    }
+
+    .social {
+        margin: -1px -8px 1px 0;
+    }
+
+    .social .title {
+        display: none;
+    }
+
+    .social-networks {
+        margin: 0;
+    }
+
+    .social-networks li {
+        margin: 0 9px 0 8px;
+    }
+
+    .contacts {
+        float: left;
+    }
+}
+
+@media (max-width: 479px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .xs-hidden {
+        display: none !important;
+    }
+
+    .row {
+        margin: 0;
+    }
+
+    .row .col {
+        display: block;
+        width: 100% !important;
+        margin: 0;
+        padding: 0;
+    }
+    .row .col.leco-cp-content {
+        padding: 1em;
+    }
+    .password-protect input[type="submit"] {
+        margin-top: 1em;
+    }
+
+    .project-status .inner-width {
+        display: block;
+    }
+    .project-status .column {
+        width: 90%;
+        margin: 0 auto 2em;
+    }
+
+    .contacts {
+        width: 100%;
+    }
+}
+
+/*
+Style lity box
+*/
+.lity {
+    background-color: rgba( 92, 102, 167, .1 );
+}
+.lity-container {
+    box-shadow: 0 6px 32px 5px rgba(120, 142, 150, 0.16);
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 25px 50px 40px;
+    min-width: 33%;
+    overflow-y: scroll;
+}
+.lity-image .lity-container {
+    padding: 0;
+    min-width: auto;
+}
+.lity-content:after {
+    box-shadow: none;
+}
+.lity-close {
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    font-size: 17px;
+    line-height: 17px;
+    top: 17px;
+    right: 17px;
+}
+.lity-close:hover, .lity-close:active {
+    font-size: 17px;
+    line-height: 17px;
+    top: 17px;
+}
+button.lity-close {
+    min-width: 17px;
+}
+.lity-close svg {
+    width: 17px;
+    height: 17px;
+    overflow: visible;
+}
+.lity-close .st0 {
+    stroke: #dde7ea;
+    stroke-width: 4px;
+}
+.lity-image .lity-close {
+    top: -25px;
+    right: -25px;
+}
+.lity-image .lity-close .st0 {
+    stroke: #8594a3;
+}
+.lity .files {
+    padding-left: 0;
+}
+.lity li {
+    border: 1px solid #dde7ea;
+    list-style: none;
+    line-height: 1em;
+    margin-bottom: 20px;
+}
+.lity li a {
+    border-bottom: none;
+    color: #8594a3;
+    display: block;
+    line-height: 1em;
+    padding: 18px 22px;
+}
+.lity-content .project-item {
+    border: none;
+    border-radius: 5px;
+    max-width: 320px;
+    margin: 0 auto;
+}
+.lity-content .project-item .desc {
+    line-height: 1.5em;
+}
+.lity .icon-download {
+    display: block;
+    float: right;
+    margin-top: -2px;
+}
+.lity .icon-download svg {
+    width: 20px;
+    height: 20px;
+}
+.lity .icon-download .st0 {
+    stroke-width: 4px;
+}
+
+#loginform.post-password-form {
+    margin-top: 37px;
+}
+
+/**
+For Sticky footer
+ */
+.title-section {
+    flex: none;
+}
+#loginform, .content-section, .projects {
+    flex: 1;
+}
+
+/**
+Content Page
+ */
+.leco-cp-sidebar h2.leco-cp-back-to-project a {
+    font-size: 11px;
+    font-weight: normal;
+    text-transform: uppercase;
+    border-bottom: 1px solid #3c506350;
+    padding-bottom: .9em;
+}
+.leco-cp-sidebar h2.leco-cp-back-to-project .iconset {
+    margin-left: 0px;
+    width: 12px;
+}
+.leco-cp-sidebar h2.leco-cp-back-to-project .iconset .st0 {
+    stroke-width: 5px;
+}
+.leco-cp-sidebar h2 {
+    margin: 0 0 1em;
+}
+.leco-cp-sidebar h2 + ul {
+    margin-top: -1em;
+}
+.leco-cp-sidebar h2 a {
+    font-size: 18px;
+    padding: 0;
+}
+.leco-cp-sidebar h2 i {
+    font-size: 14px;
+    color: #8594a3;
+}
+.leco-cp-sidebar a {
+    border-bottom: none;
+    padding: 12px 0;
+    display: block;
+    font-size: 15px;
+}
+.leco-cp-sidebar ul.collapse {
+    display: none;
+    /*margin-top: 0;*/
+}
+.leco-cp-sidebar a.current {
+    font-weight: bold;
+}
+.leco-cp-sidebar a.inactive {
+    opacity: 0.5;
+}
+.leco-cp-sidebar a.unclickable {
+    pointer-events: none;
+}
+.leco-cp-sidebar ul {
+    list-style: none;
+    padding-left: 0;
+    /*margin-top: 0;*/
+}
+.leco-cp-sidebar h2 .iconset {
+    width: 18px;
+    vertical-align: top;
+    display: inline-block;
+}
+.leco-cp-sidebar li .iconset {
+    width: 16px;
+    vertical-align: middle;
+    display: block;
+    float: left;
+    margin-right: 14px;
+}
+.leco-cp-sidebar .iconset .st0 {
+    stroke-width: 3px;
+}
+
+/**
+mark as complete module
+ */
+p.module_mark_as_complete {
+    text-align: center;
+}

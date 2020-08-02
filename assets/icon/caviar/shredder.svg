@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+</style>
+<title>Untitled-14</title>
+<g id="Shredder">
+	<polyline class="st0" points="11,11 11,3 37,3 37,11 	"/>
+	<line class="st0" x1="36" y1="28" x2="36" y2="46"/>
+	<line class="st0" x1="12" y1="46" x2="12" y2="28"/>
+	<line class="st0" x1="18" y1="42" x2="18" y2="28"/>
+	<line class="st0" x1="24" y1="46" x2="24" y2="28"/>
+	<line class="st0" x1="30" y1="42" x2="30" y2="28"/>
+	<path class="st0" d="M12,35H7c-3.3,0-6-2.7-6-6l0,0V11h46v18c0,3.3-2.7,6-6,6l0,0h-5"/>
+	<circle cx="41" cy="17" r="2"/>
+</g>
+</svg>

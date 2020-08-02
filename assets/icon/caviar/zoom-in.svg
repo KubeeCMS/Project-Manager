@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+</style>
+<title>1. General</title>
+<g id="Zoom_In">
+	<line class="st0" x1="10" y1="17" x2="24" y2="17"/>
+	<line class="st0" x1="17" y1="24" x2="17" y2="10"/>
+	<g id="Loupe">
+		<circle class="st0" cx="17" cy="17" r="16"/>
+		<line class="st0" x1="28.3" y1="28.3" x2="47" y2="47"/>
+	</g>
+</g>
+</svg>

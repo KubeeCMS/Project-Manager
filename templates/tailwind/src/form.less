@@ -1,0 +1,80 @@
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="search"],
+input[type="password"],
+input[type="url"],
+textarea {
+  @apply border border-solid outline-none shadow-none;
+  border-color: #e7edf0;
+  background: @bg-gray;
+  color: @dark-blue;
+}
+
+input:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+input[type="search"]:focus,
+input[type="password"]:focus,
+input[type="url"]:focus,
+textarea:focus {
+  border-color: var(--primary-color);
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: @gray;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  @apply opacity-100;
+  color: @gray;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: @gray;
+}
+
+/**
+Form element sizes
+ */
+.btn,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  @apply inline-block appearance-none text-center font-semibold border-none align-top text-base leading-tight py-4 px-12;
+  border-radius: 25px;
+}
+.btn {
+  &:hover {
+    border-style: none;
+  }
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="search"],
+input[type="password"],
+input[type="url"],
+textarea {
+  @apply inline-block appearance-none align-top text-base leading-tight;
+  padding: 15px 18px;
+}
+
+/**
+Form element colors
+ */
+.btn .iconset {
+@apply align-middle;
+  width: 12px;
+}
+
+.btn .iconset .st0 {
+@apply align-top;
+  stroke: #fff;
+  stroke-width: 8px;
+}

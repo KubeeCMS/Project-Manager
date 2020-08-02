@@ -1,0 +1,404 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2020-06-27 15:36+0800\n"
+"PO-Revision-Date: 2020-06-27 15:39+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.3.1\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: leco-client-portal.php:229
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: leco-client-portal.php:246
+msgid "Client Portal Login"
+msgstr "Kundenportal-Anmeldung"
+
+#: leco-client-portal.php:308 leco-client-portal.php:314
+msgid "CP Client"
+msgstr ""
+
+#: templates/default/archive.php:6 templates/default/index.php:137
+#: templates/tailwind/archive.php:6
+#: templates/tailwind/template-parts/module.php:56
+msgid "Completed"
+msgstr "Abgeschlossen"
+
+#: templates/default/archive.php:6 templates/tailwind/archive.php:6
+msgid "In Progress"
+msgstr "In Bearbeitung"
+
+#: templates/default/archive.php:19 templates/tailwind/archive.php:14
+msgid "View Portal"
+msgstr "Portal ansehen"
+
+#: templates/default/comments.php:37 templates/tailwind/comments.php:37
+#, fuzzy
+msgid ""
+"Your comment has been posted. If you don't see it here, it means it's still "
+"awaiting moderation."
+msgstr ""
+"Ihr Kommentar wurde gepostet. Wenn man es hier nicht sieht, bedeutet das, "
+"dass es immer noch auf Mäßigung wartet."
+
+#. translators: %s: post title
+#: templates/default/comments.php:47 templates/tailwind/comments.php:47
+#, php-format
+msgctxt "comments title"
+msgid "One Reply to &ldquo;%s&rdquo;"
+msgstr "Ein Kommentar zu &ldquo;%s&rdquo;"
+
+#: templates/default/comments.php:52 templates/tailwind/comments.php:52
+#, php-format
+msgctxt "comments title"
+msgid "%1$s Reply to &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s Replies to &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s Antwort auf &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s Antwortet auf &ldquo;%2$s&rdquo;"
+
+#: templates/default/comments.php:71 templates/tailwind/comments.php:71
+msgid "Reply"
+msgstr "Antworten"
+
+#: templates/default/comments.php:84 templates/tailwind/comments.php:84
+msgid "Comments are closed."
+msgstr "Kommentare sind geschlossen."
+
+#: templates/default/content.php:21 templates/default/content.php:22
+#: templates/tailwind/content.php:21 templates/tailwind/content.php:22
+msgid "Back to Project"
+msgstr "Zurück zum Projekt"
+
+#: templates/default/content.php:108 templates/default/index.php:131
+#: templates/tailwind/content.php:118
+#: templates/tailwind/template-parts/module.php:50
+msgid "Click and show the file list"
+msgstr "Klicken und die Dateiliste anzeigen"
+
+#: templates/default/content.php:171 templates/tailwind/content.php:145
+msgid "You don't have permissions to view this content."
+msgstr "Sie haben keine Berechtigungen, diesen Inhalt zu sehen."
+
+#: templates/default/content.php:193 templates/default/index.php:228
+#: templates/tailwind/template-parts/cta.php:21
+msgid "Go to your Dropbox folder"
+msgstr "Gehen Sie zu Ihrem Dropbox-Ordner"
+
+#: templates/default/content.php:203 templates/default/index.php:237
+#: templates/includes/login-functions.php:46 templates/tailwind/content.php:155
+#: templates/tailwind/index.php:114
+msgid ""
+"You don't have permission to view this project. If this is your project, "
+"you'll need to request log in info from the owner."
+msgstr ""
+"Sie haben keine Berechtigung, dieses Projekt anzusehen. Wenn dies Ihr "
+"Projekt ist, müssen Sie sich beim Eigentümer anmelden."
+
+#: templates/default/header.php:139
+#: templates/tailwind/template-parts/title-content.php:11
+msgid "Client Portal Archive"
+msgstr "Kundenportal-Archiv"
+
+#: templates/default/header.php:146
+#: templates/tailwind/template-parts/topbar.php:18
+msgid "Log Out"
+msgstr "Abmelden"
+
+#: templates/default/header.php:148
+msgid "You don't have permission to view this project. Log Out?"
+msgstr "Sie haben keine Berechtigung, dieses Projekt anzusehen. Abmelden?"
+
+#: templates/default/index.php:42 templates/tailwind/index.php:43
+msgid "Phase"
+msgstr "Phase"
+
+#: templates/default/index.php:55 templates/tailwind/index.php:56
+#, php-format
+msgid "Current %s"
+msgstr "Aktuelle %s"
+
+#: templates/default/index.php:59 templates/tailwind/index.php:60
+#, php-format
+msgid "Next %s"
+msgstr "Nächste %s"
+
+#: templates/default/index.php:63 templates/tailwind/index.php:64
+msgid "Estimated Completion Date"
+msgstr "Geschätztes Fertigstellungsdatum"
+
+#: templates/default/index.php:142
+#: templates/tailwind/template-parts/module.php:61
+msgid "Mark As Complete?"
+msgstr "Markiere als abgeschlossenen?"
+
+#: templates/default/index.php:201
+#: templates/tailwind/template-parts/module.php:93
+msgid "Mark this module as complete?"
+msgstr "Markieren dieses Modul als abgeschlossen?"
+
+#: templates/includes/functions.php:46
+#, fuzzy
+msgid "Please DO NOT share any credentials in the comments section."
+msgstr "Bitte teilen Sie keine Referenzen im Kommentarbereich."
+
+#: templates/includes/functions.php:65
+#, fuzzy
+msgid ""
+"This content page may contain comments from a private portal, we can't "
+"display comments for security/privacy reasons."
+msgstr ""
+"Diese Inhaltsseite kann Kommentare von einem privaten Portal enthalten, wir "
+"können keine Kommentare aus Sicherheitsgründen anzeigen."
+
+#: templates/includes/functions.php:155 templates/includes/functions.php:182
+msgid "Error downloading file. Please contact support."
+msgstr ""
+"Fehler beim Herunterladen der Datei. Bitte wenden Sie sich an den Support."
+
+#: templates/includes/functions.php:155 templates/includes/functions.php:182
+msgid "File download error"
+msgstr "Fehler beim Download von Dateien"
+
+#: templates/includes/functions.php:266
+msgid "You do not have permission to download this file."
+msgstr "Sie sind nicht zum Download dieser Datei berechtigt."
+
+#: templates/includes/functions.php:267
+msgid "Error"
+msgstr "Fehler"
+
+#: templates/includes/login-actions.php:58
+msgid "The passwords do not match."
+msgstr "Die Passwörter stimmen nicht überein."
+
+#: templates/includes/login-actions.php:105
+msgid "You are now logged out."
+msgstr "Sie haben sich erfolgreich abgemeldet."
+
+#: templates/includes/login-actions.php:107
+msgid "User registration is currently not allowed."
+msgstr "Registrierung ist momentan nicht möglich."
+
+#: templates/includes/login-actions.php:109
+msgid "Check your email for the confirmation link."
+msgstr ""
+"Bitte überprüfen Sie Ihren Posteingang. Sie haben eine E-Mail mit "
+"Bestätigungslink erhalten."
+
+#: templates/includes/login-actions.php:111
+msgid "Check your email for your new password."
+msgstr ""
+"Prüfen Sie Ihre E-Mails. Es wurde Ihnen eine E-Mail mit Ihrem neuen Passwort "
+"zugeschickt."
+
+#: templates/includes/login-actions.php:113
+msgid "Registration complete. Please check your email."
+msgstr "Registrierung vollständig. Bitte schauen Sie in Ihr E-Mail-Postfach."
+
+#: templates/includes/login-actions.php:189
+msgid "Lost your password?"
+msgstr "Passwort vergessen?"
+
+#: templates/includes/login-actions.php:323
+#, php-format
+msgid "[%s] Password Reset"
+msgstr "[%s] Passwort zurücksetzen"
+
+#: templates/includes/login-actions.php:367
+msgid "Someone has requested a password reset for the following account:"
+msgstr ""
+"Jemand hat das Zurücksetzen des Passworts für folgendes Konto beantragt:"
+
+#. translators: %s: site name
+#: templates/includes/login-actions.php:369
+#, php-format
+msgid "Site Name: %s"
+msgstr "Seiten Name: %s"
+
+#. translators: %s: user login
+#: templates/includes/login-actions.php:371
+#, php-format
+msgid "Username: %s"
+msgstr "Benutzername: %s"
+
+#: templates/includes/login-actions.php:372
+msgid "If this was a mistake, just ignore this email and nothing will happen."
+msgstr ""
+"Falls Sie diese E-Mail irrtümlich erhalten haben, ignorieren Sie sie bitte "
+"und es wird nichts weiter passieren."
+
+#: templates/includes/login-actions.php:373
+msgid "To reset your password, visit the following address:"
+msgstr "Um Ihr Passwort zurückzusetzen, besuchen Sie die folgende Adresse:"
+
+#: templates/includes/login-functions.php:55
+msgid "Username"
+msgstr "Benutzername"
+
+#: templates/includes/login-functions.php:56
+msgid "Password"
+msgstr "Passwort"
+
+#: templates/includes/login-functions.php:57
+msgid "Remember Me"
+msgstr "Angemeldet bleiben"
+
+#: templates/includes/login-functions.php:58
+msgid "Log In"
+msgstr "Anmelden"
+
+#: templates/includes/login-functions.php:87
+msgid ""
+"Your password reset link appears to be invalid. Please request a new link "
+"below."
+msgstr ""
+"Ihr Link zum Zurücksetzen des Passworts scheint ungültig zu sein. Bitte "
+"fordern Sie nachstehend einen neuen Link an."
+
+#: templates/includes/login-functions.php:89
+msgid "Your password reset link has expired. Please request a new link below."
+msgstr ""
+"Ihr Link zum Zurücksetzen des Passworts ist abgelaufen. Bitte fordern Sie "
+"nachstehend einen neuen Link an."
+
+#: templates/includes/login-functions.php:117
+msgid ""
+"Please enter your username or email address. You will receive a link to "
+"create a new password via email."
+msgstr ""
+"Bitte geben Sie Ihre E-Mail-Adresse hier ein. Sie bekommen eine E-Mail "
+"zugesandt, mit deren Hilfe Sie ein neues Passwort erstellen können."
+
+#: templates/includes/login-functions.php:135
+msgid "Username or Email Address"
+msgstr "Nutzername oder E-Mail Adresse"
+
+#: templates/includes/login-functions.php:148
+#: templates/includes/login-functions.php:170
+#: templates/includes/login-functions.php:228
+msgid "Log in"
+msgstr "Anmelden"
+
+#: templates/includes/login-functions.php:150
+msgid "Get New Password"
+msgstr "Neues Passwort anfordern"
+
+#: templates/includes/login-functions.php:170
+msgid "Your password has been reset."
+msgstr "Ihr Passwort wurde zurückgesetzt."
+
+#: templates/includes/login-functions.php:177
+msgid "Enter your new password below."
+msgstr "Geben Sie Ihr neues Passwort ein."
+
+#: templates/includes/login-functions.php:186
+msgid "New password"
+msgstr "Neues Passwort"
+
+#: templates/includes/login-functions.php:196
+msgid "Strength indicator"
+msgstr "Passwortstärke"
+
+#: templates/includes/login-functions.php:201
+msgid "Confirm use of weak password"
+msgstr "Bestätige die Verwendung eines schwachen Passworts"
+
+#: templates/includes/login-functions.php:207
+msgid "Confirm new password"
+msgstr "Neues Passwort bestätigen"
+
+#: templates/includes/login-functions.php:231
+msgid "Reset Password"
+msgstr "Passwort zurücksetzen"
+
+#: templates/tailwind/functions.php:27
+msgid "Are you sure to delete this file?"
+msgstr "Datei wirklich löschen?"
+
+#: templates/tailwind/functions.php:33
+msgid "Allowed Files"
+msgstr "Erlaubte Dateien"
+
+#: templates/tailwind/functions.php:39
+msgid "Failed to upload file: "
+msgstr "Fehler beim Hochladen der Datei: "
+
+#: templates/tailwind/functions.php:40
+msgid "Error: "
+msgstr "Fehler: "
+
+#: templates/tailwind/index.php:73
+msgid "Search the portal"
+msgstr "Durchsuchen des Portals"
+
+#: templates/tailwind/index.php:79
+#, fuzzy
+msgid "Type more than three characters to get results."
+msgstr "Geben Sie mehr als drei Zeichen ein, um Ergebnisse zu erhalten."
+
+#: templates/tailwind/index.php:80
+#, fuzzy
+msgid "See search results below."
+msgstr "Siehe Suchergebnisse unten."
+
+#: templates/tailwind/index.php:81
+#, fuzzy
+msgid "No search results. All modules are shown below."
+msgstr "Keine Suchergebnisse. Alle Module sind unten dargestellt."
+
+#: templates/tailwind/template-parts/filelist.php:13
+#, fuzzy
+msgid "Click or drop files here to add more"
+msgstr "Klicken oder ablegen Sie Dateien hier, um weitere hinzuzufügen"
+
+#: templates/tailwind/template-parts/filelist.php:19
+#, php-format
+msgid "Maximum upload file size: %s."
+msgstr "Maximale Dateigröße für Uploads: %s."
+
+#: templates/tailwind/template-parts/module.php:74
+msgid "add files"
+msgstr "Dateien hinzufügen"
+
+#: templates/tailwind/template-parts/topbar.php:3
+msgid "Home"
+msgstr "Startseite"
+
+#: templates/tailwind/template-parts/topbar.php:5
+msgid "Dashboard"
+msgstr "Dashboard"
+
+#: templates/tailwind/template-parts/topbar.php:14
+msgid "All Projects"
+msgstr "Alle Projekte"
+
+#. Plugin Name of the plugin/theme
+msgid "Client Portal by Laura Elizabeth"
+msgstr "Kundenportal von Laura Elizabeth"
+
+#. Plugin URI of the plugin/theme
+msgid "https://client-portal.io/"
+msgstr "https://client-portal.io/"
+
+#. Description of the plugin/theme
+msgid ""
+"A super simple, lightweight WordPress plugin to keep your client "
+"deliverables in one place."
+msgstr ""
+"Ein super einfaches, leichtgewichtiges WordPress-Plugin, um Daten Ihrer "
+"Kundenprojekte an einem zentralen Ort vorzuhalten."
+
+#. Author of the plugin/theme
+msgid "Laura Elizabeth"
+msgstr "Laura Elizabeth"
+
+#. Author URI of the plugin/theme
+msgid "http://lauraelizabeth.co/"
+msgstr "https://lauraelizabeth.co/"

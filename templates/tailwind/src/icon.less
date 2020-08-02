@@ -1,0 +1,43 @@
+.iconset {
+  @apply inline-block;
+  margin: .2em;
+  padding-top: 3px;
+  width: 2.25rem;
+  height: auto;
+
+  svg {
+    * {
+      @apply stroke-current;
+      color: @gray;
+    }
+  }
+}
+
+.lity [class^="icon-"] {
+  display: block;
+  float: right;
+  margin-top: -2px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.lity [class^="icon-"] svg {
+  width: 20px;
+  height: 20px;
+}
+.lity [class^="icon-"] .st0 {
+  stroke-width: 4px;
+}
+.lity .icon-download .st0 {
+  stroke: currentColor;
+  stroke-width: 2px;
+}
+.lity .icon-file-delete svg {
+  width: .9rem;
+  height: auto;
+}
+.lity .icon-file-delete svg * {
+  fill:none;
+  stroke:#e32b2b;
+  stroke-miterlimit:10;
+  stroke-width:2px;
+}

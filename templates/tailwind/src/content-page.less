@@ -1,0 +1,217 @@
+.leco-content-page {
+  .main-content {
+    @apply pt-0;
+  }
+}
+
+@screen md {
+  .leco-content-page {
+    .main-content {
+      padding: 4.375rem 0 2.9375rem;
+
+      .leco-cp-container {
+        @apply px-8;
+        max-width: 80rem;
+      }
+    }
+  }
+}
+
+.leco-cp-sidebar {
+  @apply hidden w-full text-left;
+
+  .iconset {
+    &.hidden {
+      @apply hidden;
+    }
+  }
+
+  .leco-cp-back-to-project {
+    @apply hidden;
+  }
+
+  h2 {
+    @apply mb-0;
+
+    + ul {
+      @apply mt-2 mb-4;
+    }
+
+    a {
+      @apply text-lg;
+    }
+
+    i {
+      @apply text-sm;
+      color: @gray;
+    }
+
+    .iconset {
+      @apply inline-block align-top;
+      width: 18px;
+    }
+  }
+
+  a {
+    @apply border-b-0 py-3 block;
+    font-size: 15px;
+
+    &.current {
+      @apply font-bold;
+    }
+
+    &.inactive {
+      @apply opacity-50;
+    }
+
+    &.unclickable {
+      @apply pointer-events-none;
+    }
+  }
+
+  ul {
+    @apply pl-0;
+
+    &.collapse {
+      @apply hidden;
+    }
+  }
+
+  li {
+    .iconset {
+      @apply align-middle block float-left mr-3;
+      width: 16px;
+
+      .st0 {
+        stroke-width: 3px;
+      }
+    }
+  }
+}
+
+@screen md {
+  .leco-cp-sidebar {
+  @apply block w-1/4;
+    padding: 40px 40px 40px 0;
+
+    h2 {
+      &.leco-cp-back-to-project {
+      @apply block;
+
+        a {
+          font-size: 11px;
+          font-weight: normal;
+          text-transform: uppercase;
+          border-bottom: 1px solid #3c506350;
+          padding-bottom: .9em;
+        }
+
+        .iconset {
+          width: 12px;
+
+          .st0 {
+            stroke-width: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.leco-cp-content {
+  @apply w-full bg-white text-left py-8 px-4;
+}
+
+@screen md {
+  .leco-cp-content {
+    @apply w-3/4 pb-12;
+    padding-top: 6rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+}
+
+/* Custom styles */
+.callout-blue {
+  background: #e8f4ff;
+  border-color: #bed1e6;
+}
+.callout-green {
+  background: #e5fadc;
+  border-color: #bbdaaf;
+}
+.callout-yellow {
+  background: #fffcd5;
+  border-color: #e7dca4;
+}
+
+.leco-cp-content dl {
+  margin-bottom: 1em
+}
+
+.leco-cp-content dt {
+  float: left;
+  display: inline-block;
+  font-weight: bold;
+  text-align: center;
+  padding: 4px 9px;
+  margin-bottom: 1em;
+  font-size: 16px;
+  line-height: 1.2em;
+  border-radius: 50px;
+  color: #fff;
+  background: #999;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.leco-cp-content dd {
+  margin: 0 0 5px 45px;
+  *zoom:1
+}
+
+.leco-cp-content dd:before,.leco-cp-content dd:after {
+  display: table;
+  content: "";
+  line-height: 0
+}
+
+.leco-cp-content dd:after {
+  clear: both
+}
+
+.leco-cp-content .callout-yellow,.leco-cp-content .callout-blue,.leco-cp-content .callout-red,.leco-cp-content .callout-green,.leco-cp-content .callout,.leco-cp-content .private-note {
+  border-left: 5px solid;
+  color: #333;
+  margin-bottom: 2em;
+  padding: 16px 25px 16px 20px
+}
+
+.leco-cp-content .dashed {
+  border: 1px dashed
+}
+
+.leco-cp-content .callout-yellow {
+  background: #fffcd5;
+  border-color: #e7dca4
+}
+
+.leco-cp-content .callout-blue {
+  background: #e8f4ff;
+  border-color: #bed1e6
+}
+
+.leco-cp-content .callout-green {
+  background: #e5fadc;
+  border-color: #bbdaaf
+}
+
+.leco-cp-content .callout-red {
+  background: #fde8e8;
+  border-color: #e7aaaa
+}
+
+.leco-cp-content .callout {
+  background: #f1f1f1;
+  border-color: #cfcfcf
+}

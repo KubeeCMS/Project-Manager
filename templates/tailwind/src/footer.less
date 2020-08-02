@@ -1,0 +1,23 @@
+#footer {
+  @apply flex flex-row justify-center items-center text-xs font-semibold text-center;
+  min-height: 3.1875rem;
+
+  a {
+    @apply border-none;
+  }
+}
+
+@screen md {
+  #footer {
+    @apply leading-none;
+  }
+}
+
+.contacts li {
+  @apply inline-block align-top;
+}
+
+.contacts li + li:before {
+  content: "\00b7";
+  margin: 0 .5625rem;
+}

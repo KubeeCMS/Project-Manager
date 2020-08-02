@@ -1,0 +1,47 @@
+nav.sidebar {
+  @apply hidden;
+}
+
+.leco-content-page {
+  nav.sidebar {
+    @apply flex items-center justify-between flex-wrap px-6 py-4;
+    background-color: @bg-gray;
+
+    h1 {
+      @apply text-xl font-semibold;
+
+      .iconset {
+        @apply -ml-3;
+      }
+    }
+
+    a {
+      @apply flex items-center content-center border-none;
+    }
+
+    button {
+      @apply flex bg-transparent px-0 items-center;
+      color: @gray;
+
+      &.hidden {
+        @apply hidden;
+      }
+
+      &:focus {
+        @apply outline-none;
+      }
+
+      svg {
+        @apply fill-current w-5 h-5;
+      }
+    }
+  }
+}
+
+@screen md {
+  .leco-content-page {
+    nav.sidebar {
+      @apply hidden;
+    }
+  }
+}

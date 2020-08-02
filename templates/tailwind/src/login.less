@@ -1,0 +1,200 @@
+#loginform, #resetpassform {
+  p {
+  @apply pb-0;
+  }
+
+  label {
+    display: block;
+    margin: 0 0 9px;
+  }
+
+  .btn {
+    margin: 47px auto 0;
+  }
+
+  .login-password + .login-submit {
+    .button {
+      @apply mt-0;
+    }
+  }
+
+  .login-submit {
+    clear: both;
+  }
+  .button {
+    @apply mt-12;
+  }
+
+  .error-msg {
+    @apply hidden;
+    margin: -37px 0 10px;
+    color: @red;
+  }
+
+  .lost-password {
+  @apply float-left;
+  }
+  .login-remember {
+  @apply float-right;
+  }
+}
+
+.leco-cp-login form {
+@apply overflow-hidden;
+  width: 320px;
+  margin: auto;
+}
+
+.leco-cp-login input[type="text"],
+.leco-cp-login input[type="tel"],
+.leco-cp-login input[type="email"],
+.leco-cp-login input[type="search"],
+.leco-cp-login input[type="password"],
+.leco-cp-login input[type="url"],
+.leco-cp-login textarea {
+  display: block;
+  width: 100%;
+  //padding-right: 50px;
+  margin-bottom: 40px;
+}
+
+.leco-cp-login .message,
+.leco-cp-login .success,
+.leco-cp-login .login-error,
+.leco-cp-login .leco-cp-errors {
+  width: 320px;
+  border-left: 4px solid #00a0d2;
+  font-size: 13px;
+  color: #444;
+  padding: 12px;
+  margin: 0 auto 20px;
+  background-color: #fff;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1);
+}
+.leco-cp-login .success {
+  border-left-color: #46b450;
+}
+.leco-cp-login .login-error, .leco-cp-login .leco-cp-alert-error {
+  border-left-color: #dc3232;
+}
+.leco-cp-login .leco-cp-errors p {
+@apply pb-0;
+}
+
+/** Password Reset form **/
+#resetpassform input[type="text"], #resetpassform input[type="password"] {
+  font-size: 1.5em;
+  //padding-right: 30px;
+}
+.user-pass1-wrap p, .leco-cp-login .description {
+  margin-bottom: 0;
+}
+.leco-cp-login .description {
+  width: 320px;
+  font-size: 13px;
+}
+
+.leco-cp-login .password-input-wrapper {
+  display: table;
+}
+.leco-cp-login .input.password-input {
+  display: table-cell;
+  margin: 0;
+}
+.leco-cp-login .pw-weak {
+  margin-bottom: 15px;
+}
+.leco-cp-login .button.button-secondary {
+  display: table-cell;
+  border-radius: 0;
+  vertical-align: middle;
+  color: #555;
+  border: 1px solid #cccccc;
+  background: #f7f7f7;
+  box-shadow: 0 1px 0 #cccccc;
+  padding: 0 10px;
+}
+#pass-strength-result {
+  background-color: #eee;
+  border: 1px solid #ddd;
+  color: #23282d;
+  margin: 0;
+  padding: 3px 5px;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  opacity: 0;
+}
+#pass-strength-result.short {
+  background-color: #f1adad;
+  border-color: #e35b5b;
+  opacity: 1;
+}
+#pass-strength-result.bad {
+  background-color: #fbc5a9;
+  border-color: #f78b53;
+  opacity: 1;
+}
+#pass-strength-result.good {
+  background-color: #ffe399;
+  border-color: #ffc733;
+  opacity: 1;
+}
+#pass-strength-result.strong {
+  background-color: #c1e1b9;
+  border-color: #83c373;
+  opacity: 1;
+}
+#pass1.short, #pass1-text.short {
+  border-color: #e35b5b;
+}
+#pass1.bad, #pass1-text.bad {
+  border-color: #f78b53;
+}
+#pass1.good, #pass1-text.good {
+  border-color: #ffc733;
+}
+#pass1.strong, #pass1-text.strong {
+  border-color: #83c373;
+}
+.pw-weak {
+  display: none;
+}
+.indicator-hint {
+  padding-top: 8px;
+}
+#pass1-text,
+.show-password #pass1 {
+  display: none;
+}
+.show-password #pass1-text
+{
+  display: inline-block;
+}
+
+.login-submit {
+  text-align: center;
+}
+
+/* Fix the Jetpack "prove your humanity" input style. */
+#jetpack_protect_answer {
+  padding: 0 !important;
+  display: inline !important;
+  margin-bottom: 15px !important;
+}
+/**
+reCaptcha
+ */
+#loginform div.g-recaptcha {
+  margin: 12px auto 24px !important;
+}
+.anr_captcha_field {
+  margin-bottom: 38px;
+}
+#anr_captcha_field_1 > div, .g-recaptcha > div, .gglcptch_recaptcha > div {
+  margin: 0 auto;
+}
+
+#loginform.post-password-form {
+  margin-top: 37px;
+}

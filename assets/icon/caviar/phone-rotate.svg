@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+</style>
+<title>Untitled-17</title>
+<g id="Phone_Rotate">
+	<g id="Smart_Phone">
+		<path class="st0" d="M11.6,4l16.8-3c2.1-0.4,4,1,4.4,3.1L39,39.6c0.4,2.1-1,4-3.1,4.4l-16.8,3c-2.1,0.4-4-1-4.4-3.1L8.5,8.4
+			C8.1,6.4,9.5,4.4,11.6,4z"/>
+		<ellipse transform="matrix(0.9848 -0.1736 0.1736 0.9848 -6.8377 5.3013)" cx="26.9" cy="41.7" rx="1.9" ry="1.9"/>
+		<line class="st0" x1="14.1" y1="40.1" x2="38.3" y2="35.9"/>
+	</g>
+	<path class="st0" d="M41,9L41,9c5.7,3.3,7.7,10.7,4.4,16.4c0,0,0,0,0,0l0,0"/>
+	<polyline class="st0" points="41,15 41,9 47,9 	"/>
+	<path class="st0" d="M7,38L7,38c-5.7-3.3-7.7-10.7-4.4-16.4c0,0,0,0,0,0l0,0"/>
+	<polyline class="st0" points="7,32 7,38 1,38 	"/>
+</g>
+</svg>

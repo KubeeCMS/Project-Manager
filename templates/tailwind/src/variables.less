@@ -1,0 +1,58 @@
+@blue: #52cdf5;
+@dark-blue: #3c5063;
+@gray: #8594a3;
+@red: #ff5f5f;
+@gray-light: #e7eaec;
+@bg-gray: #f6f8f9;
+
+a.project-item:hover {
+  box-shadow: 0 0 5px var(--primary-color);
+}
+
+.cta-section, .leco-cp-content dt {
+  background: var(--primary-color);
+  color: var(--primary-text-color);
+}
+
+.btn, button, input[type="button"], input[type="reset"], input[type="submit"], .project-item.completed .checkmark {
+  background-color: var(--secondary-color);
+  color: var(--secondary-text-color);
+}
+
+.btn:hover, input[type="button"]:hover, input[type="submit"]:hover {
+  background: var(--secondary-color);
+  color: var(--secondary-text-color);
+  filter: brightness(95%);
+}
+
+#footer {
+  background-color: var(--tertiary-color);
+  color: var(--tertiary-text-color);
+}
+
+#footer a {
+  color: var(--tertiary-text-color);
+}
+
+#footer a:hover {
+  opacity: 0.8;
+}
+
+.project-link a {
+  background: var(--secondary-color);
+  color: var(--secondary-text-color);
+}
+
+a {
+  border-bottom-color: var(--secondary-color);
+}
+
+a:hover, .lity li a:hover, .leco-cp-sidebar a:hover, .leco-cp-sidebar a.current:hover {
+  color: var(--secondary-color);
+}
+.leco-cp-sidebar a:hover .iconset .st0 {
+  stroke: var(--secondary-color);
+}
+.lity [class^="icon-"] .st0 {
+  stroke: var(--secondary-color);
+}

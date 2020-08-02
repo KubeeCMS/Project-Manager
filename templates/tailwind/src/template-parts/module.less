@@ -1,0 +1,284 @@
+.action {
+  @apply absolute z-10 bg-no-repeat bg-center;
+  background-color: var(--secondary-color);
+  background-size: 13px;
+  border-radius: 25px;
+  height: 25px;
+  width: 25px;
+  top: 12px;
+  right: 12px;
+
+  .tooltip {
+    .arrow {
+      @apply absolute w-0 h-0 border-transparent border-solid;
+      border-left-width: 7px;
+      border-right-width: 7px;
+      border-top: 7px solid #262626;
+      right: calc(50% - 14px);
+      top: 29px;
+    }
+  }
+
+  &:hover {
+    .tooltip {
+      @apply opacity-100 visible;
+      transform: translateY(0px);
+    }
+  }
+
+  &.checkmark {
+    background-image: url(../assets/checkmark.svg);
+  }
+  &.upload {
+    background-image: url(../assets/upload.svg);
+    background-size: 12px;
+    background-position: 6px 6px;
+    right: 45px;
+
+    .tooltip {
+      .arrow {
+        right: calc(50% + 7px);
+      }
+    }
+  }
+
+  .tooltip {
+    @apply absolute text-white opacity-0 invisible;
+    background: #262626;
+    padding: 7px 10px;
+    border-radius: 3px;
+    z-index: 3;
+    font-size: 12px;
+    right: calc(-50% - 12px);
+    top: -45px;
+    transform: translateY(8px);
+    transition: visibility 0s, transform 0.3s, opacity 0.3s;
+  }
+}
+
+.module-wrap {
+  @apply w-full align-top;
+}
+
+@screen md {
+  .module-wrap {
+    @apply w-1/3 px-2;
+  }
+
+  .module {
+    height: calc(100% - 1.25rem);
+  }
+}
+
+.module {
+  @apply block relative mb-5 bg-white border border-solid text-sm leading-tight text-center;
+  padding: 1.125rem 1.875rem;
+  min-height: 11.75rem;
+  border-color: @gray-light;
+  color: @gray;
+
+  &:hover {
+    color: @gray;
+    box-shadow: 0 0 5px var(--primary-color);
+  }
+
+  &.inactive {
+    @apply opacity-50;
+    pointer-events: none;
+  }
+
+  &.unclickable {
+    pointer-events: none;
+    .action {
+      pointer-events: auto;
+    }
+  }
+
+  &.completed, &.mark-as-complete {
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &.mark-as-complete {
+    .action {
+      background-color: #cad7dd;
+
+      &:hover {
+        background-color: #8794a1;
+      }
+
+      .tooltip {
+        @apply w-auto whitespace-no-wrap;
+        right: calc(-50% - 33px);
+      }
+    }
+  }
+
+  .ico-area {
+    @apply block leading-none;
+    font-size: 2.626rem;
+    margin: 0 0 .625rem;
+  }
+
+  .title {
+    @apply block text-lg leading-tight mb-3;
+    color: var(--tertiary-color);
+  }
+
+  .upload {
+    @apply pt-6 pb-2;
+
+    &:hover {
+      color: var(--primary-color);
+    }
+
+    svg {
+      @apply inline-block;
+      width: .8rem;
+      height: auto;
+
+      * {
+        @apply stroke-current;
+        stroke-width: 1px;
+      }
+    }
+  }
+}
+
+/*
+Style lity box
+*/
+.lity {
+  background-color: rgba( 92, 102, 167, .1 );
+}
+.lity-container {
+  box-shadow: 0 6px 32px 5px rgba(120, 142, 150, 0.16);
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 25px 50px 40px;
+  min-width: 40%;
+  overflow-y: auto;
+}
+.lity-image .lity-container {
+  padding: 0;
+  min-width: auto;
+}
+.lity-content:after {
+  box-shadow: none;
+}
+.lity-close {
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  font-size: 17px;
+  line-height: 17px;
+  top: 17px;
+  right: 17px;
+}
+.lity-close:hover, .lity-close:active {
+  font-size: 17px;
+  line-height: 17px;
+  top: 17px;
+}
+button.lity-close {
+  min-width: 17px;
+}
+.lity-close svg {
+  width: 17px;
+  height: 17px;
+  overflow: visible;
+}
+.lity-close .st0 {
+  stroke: #dde7ea;
+  stroke-width: 4px;
+}
+.lity-image .lity-close {
+  top: -25px;
+  right: -25px;
+}
+.lity-image .lity-close .st0 {
+  stroke: #8594a3;
+}
+.lity .files {
+  margin-top: 20px;
+  padding-left: 0;
+}
+.lity li {
+  list-style: none;
+  line-height: 1em;
+  margin-bottom: 20px;
+  position: relative;
+}
+.lity li a {
+  border: 1px solid #dde7ea;
+  color: #8594a3;
+  display: block;
+  line-height: 1em;
+  padding: 18px 17px 18px 22px;
+
+  &.file-delete {
+    position: absolute;
+    top: 4px;
+    right: -45px;
+    content: ' ';
+    display: inline-block;
+    border: none;
+  }
+
+  .progress {
+    height: 51px;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: var(--primary-color);
+    opacity: .1;
+    z-index: -10;
+  }
+
+  &:hover {
+    border-color: var(--secondary-color);
+  }
+}
+.lity-content {
+  .module {
+    border: none;
+    border-radius: 5px;
+    //max-width: 320px;
+    margin: 0 auto;
+
+    &:hover {
+      @apply shadow-none;
+    }
+
+    .desc {
+      line-height: 1.5em;
+    }
+  }
+
+  .module_mark_as_complete, .client-uploads-container {
+    @apply text-center;
+  }
+
+  .choose-files {
+    @apply py-4;
+    background-color: #f7fafb;
+    border: 1px dashed #dde7ea;
+    cursor: pointer;
+
+    &.drag-over, &:hover {
+      border-color: var(--primary-color);
+    }
+
+    span {
+      @apply text-sm;
+      color: @dark-blue;
+    }
+
+    p.max-upload-size {
+      @apply text-xs pb-0;
+      color: #98a5b1;
+    }
+  }
+}

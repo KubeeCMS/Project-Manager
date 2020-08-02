@@ -1,0 +1,88 @@
+.title-section {
+  @apply relative text-3xl font-light py-2;
+  background-color: var(--primary-color);
+  color: var(--primary-text-color);
+  line-height: 1.33;
+  letter-spacing: 1px;
+
+  .leco-cp-container {
+    @apply mx-auto flex flex-col items-center justify-center flex-wrap;
+    min-height: 16rem;
+  }
+
+  .title-content {
+    @apply w-full flex flex-col items-center;
+
+    h1 {
+      @apply text-center;
+    }
+  }
+
+  .topbar {
+    @apply w-full my-4;
+
+    ul {
+      @apply flex justify-around w-full;
+
+      li {
+        @apply block;
+
+        a {
+          @apply text-sm border-none font-normal px-1;
+          color: var(--primary-text-color);
+
+          &.current {
+            @apply border-solid;
+            padding-bottom: 2px;
+          }
+        }
+      }
+    }
+  }
+}
+
+//.logged-in {
+//  .title-section {
+//    .leco-cp-container {
+//      @apply flex-row;
+//    }
+//  }
+//}
+
+.leco-content-page {
+  .title-section {
+    @apply hidden;
+  }
+}
+
+@screen md {
+  .title-section {
+    .leco-cp-container {
+      @apply px-8;
+    }
+
+    .topbar {
+      @apply w-auto;
+
+      li {
+        @apply px-3;
+      }
+    }
+  }
+
+  .leco-content-page {
+    .title-section {
+      @apply block;
+    }
+  }
+}
+
+.project-logo {
+  @apply p-5;
+
+  &.fixed-width {
+    @apply h-auto p-0 my-5;
+    width: 270px;
+    max-width: 270px;
+  }
+}

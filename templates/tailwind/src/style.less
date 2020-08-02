@@ -1,0 +1,123 @@
+/**
+ * This injects Tailwind's base styles, which is a combination of
+ * Normalize.css and some additional base styles.
+ *
+ * You can see the styles here:
+ * https://github.com/tailwindcss/tailwindcss/blob/master/css/preflight.css
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/preflight";
+ */
+@tailwind base;
+
+/**
+ * This injects any component classes registered by plugins.
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/components";
+ */
+/**
+We don't include components because it only has the .container class and we have our own.
+ */
+//@tailwind components;
+
+/**
+ * Here you would add any of your custom component classes; stuff that you'd
+ * want loaded *before* the utilities so that the utilities could still
+ * override them.
+ *
+ * Example:
+ *
+ * .btn { ... }
+ * .form-input { ... }
+ *
+ * Or if using a preprocessor or `postcss-import`:
+ *
+ * @import "components/buttons";
+ * @import "components/forms";
+ */
+
+/**
+ * Tailwind container core plugin depends on responsive screens,
+ * We disable it and manually add the container RWD rules here.
+ */
+
+.leco-cp-container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .leco-cp-container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .leco-cp-container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .leco-cp-container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .leco-cp-container {
+    max-width: 1280px;
+  }
+}
+
+@import "variables";
+@import "base";
+@import "header";
+@import "footer";
+@import "icon";
+@import "form";
+@import "login";
+@import "index";
+@import "archive";
+//@import "comment";
+@import "media";
+@import "content-page";
+@import "editor";
+@import "template-parts/nav.less";
+@import "template-parts/module.less";
+@import "template-parts/cta.less";
+@import "wordpress";
+
+/**
+ * This injects all of Tailwind's utility classes, generated based on your
+ * config file.
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/utilities";
+ */
+/*
+We don't use utilities classes right in our template. Just put some useful ones here.
+*/
+//@tailwind utilities;
+
+.hidden {
+  display: none;
+}
+
+/**
+ * Here you would add any custom utilities you need that don't come out of the
+ * box with Tailwind.
+ *
+ * Example :
+ *
+ * .bg-pattern-graph-paper { ... }
+ * .skew-45 { ... }
+ *
+ * Or if using a preprocessor or `postcss-import`:
+ *
+ * @import "utilities/background-patterns";
+ * @import "utilities/skew-transforms";
+ */
