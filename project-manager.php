@@ -21,7 +21,6 @@
  * License URI:  https://opensource.org/licenses/GPL-2.0
  * Text Domain:  leco-cp
  * Domain Path:  /languages/
- * Network:      true
  * Requires WP:  5.5
  * Requires PHP: 7.3
  *
