@@ -1,7 +1,7 @@
 {
-  "name": "vue-wp-starter",
-  "version": "1.0.0",
-  "description": "A WordPress Vue.js starter plugin",
+  "name": "project-manager",
+  "version": "4.8.8",
+  "description": "A Vue.js Project Manager plugin",
   "author": "Tareq Hasan <tareq@wedevs.com>",
   "license": "GPLv2",
   "private": true,
